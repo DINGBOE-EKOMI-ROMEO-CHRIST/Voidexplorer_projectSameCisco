@@ -1,0 +1,43 @@
+
+ASTUCES 
+pour relier des ordis entre eux via un cable droit
+
+demarrer 
+0 executer
+1 cmd
+2 ipconfig /all
+3  reperer que dhcp est activé pour povoir poursuivre à la configuration 
+4 connexion au reseau local
+5 proprietés
+6 click sur tcp ip version 4
+7 cocher l'option utiliser l'adresse ip 
+8 attribution : 192.168.1.0
+
+
+
+L'adresse ip passerelle s'occupe des autres machines 
+pour pouvoir communiquer à l'exterieur
+
+si ip passerelle est 
+par exemple : 192.168.1.1 
+dans ce cas les autres doivent suivre excessivement
+n°2 attribue 192.168.1.2
+un suit de suite.
+
+9 click droit sur ordintaur 
+10 proprietés 
+11 nom de l'ordinateur (click su modifier des paramettres)
+12 nom du groupe de travail à choisir ( apres redemarrage du pc)
+13 tapez ping dans cmd pour s'assurer que votre pc voit les autres pc
+14 tapez ping l'addresse ip puis -t
+
+ping permet de verifier la continuite electrique entre des different pc
+
+
+
+
+
+
+
+
+

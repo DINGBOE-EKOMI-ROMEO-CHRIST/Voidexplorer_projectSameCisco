@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#controls {
+    margin: 20px;
+}
+
+#network-area {
+    width: 800px;
+    height: 500px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.equipment {
+    width: 100px;
+    height: 80px;
+    background-color: #e6f0ff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    padding-top: 5px;
+    user-select: none;
+}
+
+.equipment .type {
+    font-weight: bold;
+}
+
+.equipment .info {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.connection-line {
+    position: absolute;
+    height: 2px;
+    background-color: #333;
+    transform-origin: 0 0;
+    z-index: 0;
+}
+
+#config-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Réseau</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Simulation Réseau</h1>
+    <div id="controls">
+        <button onclick="addEquipment('Routeur')">Ajouter un Routeur</button>
+        <button onclick="addEquipment('Switch')">Ajouter un Switch</button>
+        <button onclick="addEquipment('Ordinateur')">Ajouter un Ordinateur</button>
+        <button onclick="toggleConnectionMode()">Mode Connexion</button>
+        <button onclick="deleteSelectedConnections()">Supprimer les Connexions</button>
+    </div>
+    <div id="network-area"></div>
+
+    <div id="config-panel" class="hidden">
+        <h3>Configurer l'Équipement</h3>
+        <label for="ip-address">Adresse IP :</label>
+        <input type="text" id="ip-address" placeholder="192.168.1.1">
+        
+        <label for="subnet-mask">Masque de sous-réseau :</label>
+        <input type="text" id="subnet-mask" placeholder="255.255.255.0">
+        
+        <button onclick="saveConfiguration()">Enregistrer</button>
+        <button onclick="closeConfigPanel()">Fermer</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
